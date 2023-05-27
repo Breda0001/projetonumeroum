@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root{
+    --cor-principal:#808000;
+    --cor-secundaria:#FAFA0C;
+    --cor-terciaria: #000000;
+    --cor-destaque: #7fffd4;
+    --cor-ativa: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    background-color: var(--cor-principal);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho{
+    margin: 2% 10% 0% 5%;
+    font-family: 'krona one', sans-serif;
+    font-weight: bolder;
+    font-size: 1.25rem;
+    display: flex;
+    justify-content:baseline;
+}
+
+.cabecalho__botoes{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.cabecalho__botoes__linkados{
+    color: var(--cor-destaque);
+    text-decoration: none;
+}
+
+.cabecalho__botoes__linkados:hover{
+    color: var(--cor-ativa);
+}
+
+.monster{
+    margin: 5% 10% 5% 10%;
+    display: flex;
+    align-items: center;    
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.monster__conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.monster__conteudo__titulo {
+    text-align: center;
+    font-size: 2.25rem;
+    font-family: 'Krona One', sans-serif;;
+}
+
+.monster__conteudo__texto {
+    text-align: justify;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.monster__botoes{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.monster__botoes__texto{
+    color: var(--cor-ativa);
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+}
+
+.monster__botoes__blz{
+    width: 30%; 
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid var(--cor-secundaria);
+    border-radius: 10px;
+    font-size: 1.5rem;
+    padding: 1% 7%;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    /* font-family: 'Montserrat', sans-serif; */
+    font-weight: 600;
+}
+
+.monster__botoes__blz:hover{
+    background-color: var(--cor-secundaria);
+    color: var(--cor-principal);
+    border-color: var(--cor-terciaria);
+}
+
+.destaque{
+    color: var(--cor-terciaria);
+}
+
+.homem_da_vez{
+    color: var(--cor-destaque);
+    font-weight: bolder;
+}
+
+.homem_da_vez:hover{
+    cursor: grab;
+    color: var(--cor-terciaria);
+}
+
+.homem_da_vez:hover:active{
+    cursor: grabbing;
+}
+
+.RHC {
+    font-weight:bolder;
+    color: var(--cor-ativa);
+    border: 0.5px solid var(--cor-terciaria);
+    padding: 0.5px;
+}
+
+.RHC:hover{
+    cursor: pointer;
+    color:var(--cor-terciaria);
+    background-color: var(--cor-secundaria);
+}
+
+.mulherCodando{
+    width: 50%;
+} 
+
+.rodape{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 10vh; 
+    width: auto;
+    font-weight: 600;
+    column-gap: 10px;
+    row-gap: 10px;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-principal);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.monster__conteudo__texto__biografia{
+    margin: 3%;
+    text-align: justify;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif
+}
+
+
+@media (max-width:1200px){
+    .cabecalho{
+        margin: 2% 10% 0% 5%;
+        font-family: 'krona one', sans-serif;
+        font-weight: bolder;
+        font-size: 1.5rem;
+        display: flex;
+        justify-content:center;
+        text-align: center;
+        align-items: center;
+    }   
+    .monster{
+        margin: 5% 0% 5% 0%; 
+        padding: 5%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .monster__conteudo{
+        width: auto;
+    }
+    
+    .monster__conteudo__texto__biografia{
+        padding: 3%;
+        text-align: justify;
+        font-size: 1.5rem;
+        font-family: 'Montserrat', sans-serif
+    }
+
+
+    .cabecalho__botoes{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 40px;
+    }
+
+
+    .cabecalho__botoes__linkados{
+        height: auto;
+        width: 180px;
+        color: var(--cor-destaque);
+        text-decoration: none;
+    }
+
+    .mulherCodando{
+        width: 90%;
+    }
+}
+
+
+/* atalhos gerais */
+/* 1rem = 16px */
+/* ctrl + P = barra de busca */
+/* ctrl + k + C = Comentário (adic comentário) */
+/* ctrl + shift + k = apagar linha */
+/* crtl + C (no começo da linha) = copiar linha */
+/* alt + setas = move a linha */
+/* alt + shift + seta = duplica linha */
+/* alt + cursor = digitação dupla */
+
